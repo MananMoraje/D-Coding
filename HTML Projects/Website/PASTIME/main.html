@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../PASTIME/main.css">
+    <title> pasTime</title>
+  </head>
+  <body>
+    <h1 id="mainhead">
+      pasTime
+    </h1>
+          <input align="center" type="text" id="myInput" onkeyup="myFunction()" placeholder="  Search pasTime's Pages" title="Search EveryThing" length=300px>
+
+
+    <ul id="myUL">
+      <li class="linktopg"><a href="movies.html">Movies</a></li>
+      <li class="linktopg"><a href="dino.html">Google Offline Dinosaur Game</a></li>
+
+
+    </ul>
+    <script>
+      function myFunction() {
+    var input, filter, ul, li, a, i;
+
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    </script>
+    <div>
+      <p>
+        By Manan Moraje. If you like this, try <a href="EveryThing.html">EveryThing</a>
+      </p>
+    </div>
+  </body>
+</html>

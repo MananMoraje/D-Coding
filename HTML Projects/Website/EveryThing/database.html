@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Hotwheels Database</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <!-- <link href="jumbotron.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="../Website/main.css">
+ </head>
+
+<body >
+
+    
+      
+  <nav class="navbar  navbar-expand-md fixed-top custom" >
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" class="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+          <a class="nav-link" href=" EveryThing.html"> EveryThing </a> 
+        </li>
+          <li class="nav-item active">
+          <a class="nav-link" href="DataBases.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">MyProjects</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="project1.html">Verb Finder</a>
+            <a class="dropdown-item" href="project2.html">Every_Thing</a>
+                 <a class="dropdown-item" href="database.html">My Grades(Database)</a>
+            <a class="dropdown-item" href="database1.html">Hotwheels(Database)</a>
+          </div>
+        </li>
+       
+      </ul>
+    </div>
+  </nav>
+
+ <img class="logo" align="right" src="C:\Users\manan\Pictures\EveryThing; symbol.png" width="100">
+		
+    <div class="sql-output">
+        <!--<h1>Database Schema</h1>
+        <table class="sql-schema-table" data-table-name="UnitExamResults">
+        <thead>
+            <tr><th><a href="javascript:void(0)">UnitExamResults</a> <span class="row-count">10 rows</span></th>
+        </tr></thead>
+        <tbody>
+            <tr><td>
+            id <span class="schema-pk">(PK)</span> <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Type  <span class="column-type-wrap"><span class="schema-column-type">TEXT</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Subject  <span class="column-type-wrap"><span class="schema-column-type">TEXT</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Score  <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+            <tr><td>
+            Out_Of  <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+        </tbody>
+        </table>
+        <table class="sql-schema-table" data-table-name="TermExamResults">
+        <thead>
+            <tr><th><a href="javascript:void(0)">TermExamResults</a> <span class="row-count">9 rows</span></th>
+        </tr></thead>
+        <tbody>
+            <tr><td>
+            id <span class="schema-pk">(PK)</span> <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Type  <span class="column-type-wrap"><span class="schema-column-type">TEXT</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Subject  <span class="column-type-wrap"><span class="schema-column-type">TEXT</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Score  <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+            <tr><td>
+            Out_Of  <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+        </tbody>
+        </table>
+        <!--<table class="sql-schema-table" data-table-name="GradedExamResults">
+        <thead>
+            <tr><th><a href="javascript:void(0)">GradedExamResults</a> <span class="row-count">2 rows</span></th>
+        </tr></thead>
+        <tbody>
+            <tr><td>
+            id <span class="schema-pk">(PK)</span> <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Type  <span class="column-type-wrap"><span class="schema-column-type">TEXT</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Subject  <span class="column-type-wrap"><span class="schema-column-type">TEXT</span></span>
+            </td></tr>
+            <tr><td>
+            Exam_Score  <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+            <tr><td>
+            Out_Of  <span class="column-type-wrap"><span class="schema-column-type">INTEGER</span></span>
+            </td></tr>
+        </tbody>
+        </table>-->
+
+     <table class="sql-result-table">
+        <thead>
+            <tr><th>Exam_Subject</th>
+            <th>Exam_Type</th>
+            <th>Exam_Score</th>
+            <th>Out_Of</th>
+            <th>Exam_Type</th>
+            <th>Exam_Score</th>
+            <th>Out_Of</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                        <td>Biology</td>
+                        <td>Term exam  1</td>
+                        <td>76</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>49</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>Chemistry</td>
+                        <td>Term exam 1</td>
+                        <td>79</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>48</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>Physics</td>
+                        <td>Term exam 1</td>
+                        <td>64</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>45</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>Computer Science</td>
+                        <td>Term exam 1</td>
+                        <td>75</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>47</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>Math</td>
+                        <td>Term exam 1</td>
+                        <td>53</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>44</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>English Literature</td>
+                        <td>Term exam 1</td>
+                        <td>55</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>35.5</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>History</td>
+                        <td>Term exam 1</td>
+                        <td>72</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>39</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>Geography</td>
+                        <td>Term exam 1 </td>
+                        <td>67</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>44</td>
+                        <td>50</td>
+            </tr>
+            <tr>
+                        <td>French</td>
+                        <td>Unit test 1</td>
+                        <td>46</td>
+                        <td>80</td>
+                        <td>Unit test 1</td>
+                        <td>38</td>
+                        <td>50</td>
+            </tr>
+        </tbody>
+        </table>
+        <table class="sql-result-table">
+        <thead>
+            <tr><th>Term_Exam_Average</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                        <td>65.22222222222223</td>
+            </tr>
+        </tbody>
+        </table>
+        <table class="sql-result-table">
+        <thead>
+            <tr><th>Unit_Exam_Average</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                        <td>41.15</td>
+            </tr>
+        </tbody>
+        </table>
+	  <i><u> <h3 align="justify" ID="end">&copy;	A          Manan          Moraje              Production </h3>
+</u>
+</i>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <!--<script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

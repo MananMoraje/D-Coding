@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/gh/processing-js/processing-js@v1.4.8/processing.js"></script>
+    </head>
+    <body>
+        <canvas width="400" height="400" data-processing-sources="code.js"></canvas>
+	<script>
+void setup() {
+  size(400, 400);
+}
+// Triangles
+    var X1 = 100;
+    var Y1 = 100;
+
+    var X2 = 300;
+    var Y2 = 100;
+
+    var X3 = 200;
+    var Y3 = 273.205;
+
+        var Points1 = 1;
+        var Points2 = 1;
+        var Points3 = 1;
+// Quadrilateral
+    var Xi = 120;
+    var Yi = 120;
+
+    var Xii = 280;
+    var Yii = 120;
+
+    var Xiii = 280;
+    var Yiii = 280;
+
+    var Xiv = 120;
+    var Yiv = 280;
+
+        var Speedi = 1;
+        var Speedii = 1;
+        var Speediii =1;
+        var Speediv = 1;
+
+
+
+void draw {
+   background(255, 255, 255);
+
+   // Draw Triangle
+    fill(56, 102, 255, 190);
+    triangle(X1, Y1, X2, Y2, X3, Y3);
+
+   // Draw Quadrilateral
+    fill(7, 143, 0, 190);
+    quad(Xi, Yi, Xii, Yii, Xiii, Yiii, Xiv, Yiv);
+
+
+
+  // Triangles
+    X1 += Points1;
+    Y1 += Points1;
+
+    X2 += Points2;
+    Y2 += Points2;
+
+    X3 += Points3;
+    Y3 += Points3;
+
+
+    // 1's
+    if ( X1 > 400 || Y1 > 400){
+      Points1 = -1;
+    }
+     if ( X1 < 0 || Y1 < 0){
+      Points1 = 1;
+    }
+
+    // 2's
+    if ( X2 > 400 || Y2> 400){
+      Points2 = -1;
+    }
+     if ( X2 < 0 || Y2 < 0){
+      Points2 = 1;
+    }
+
+    // 3's
+    if ( X3 > 400 || Y3 > 400){
+      Points3 = -1;
+    }
+     if ( X3 < 0 || Y3 < 0){
+      Points3 = 1;
+    }
+
+
+    // Quadrilaterals
+     Xi += Speedi;
+    Yi += Speedi;
+
+    Xii += Speedii;
+    Yii+= Speedii;
+
+    Xiii += Speediii;
+    Yiii += Speediii;
+
+    Xiv += Speediv;
+    Yiv += Speediv;
+
+    // 1's
+    if ( Xi > 400 || Yi > 400){
+      Speedi= -1;
+    }
+     if ( Xi < 0 || Yi < 0){
+      Speedi = 1;
+    }
+
+    // 2's
+    if ( Xii > 400 || Yii > 400){
+     Speedii = -1;
+    }
+     if ( Xii < 0 || Yi < 0){
+      Speedii = 1;
+    }
+
+    // 3's
+    if ( Xiii > 400 || Yiii > 400){
+      Speediii = -1;
+    }
+     if ( Xiii < 0 || Yiii < 0){
+      Speediii = 1;
+    }
+
+     // 4's
+    if ( Xiv > 400 || Yiv > 400){
+      Speediv = -1;
+    }
+     if ( Xiv < 0 || Yiv < 0){
+      Speediv = 1;
+    }
+
+    //Distances and Text
+
+
+
+
+};
+
+</script>
+
+</body>
+</html>
